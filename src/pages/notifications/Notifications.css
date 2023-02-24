@@ -1,0 +1,20 @@
+.waiters__name {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.waiters__notif {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-transform: capitalize;
+  margin: 0.3rem 0;
+  padding: 1rem;
+  box-shadow: 1px 2px 5px rgb(219, 219, 219);
+  border-radius: 5px;
+}
+
+.products__manager.unread {
+  font-weight: 700;
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap");
+:root {
+  --primary-color: #080808;
+  --yellow: #f3e194;
+  --hover: #252525;
+  --text-color: #5f7291;
+  --grey-font: #808080;
+  --white: #fff;
+  --faint-blue: #e2e9fa;
+  --blue-border: #8aa8ec;
+  --white2: #e1e1e1;
+  --whiteash: #e2e9fa;
+  --black: #343f50;
+  --orange: #ec9c04;
+  --danger: rgb(122, 18, 18);
+  --success: rgb(85, 205, 33);
+  --error: rgb(205, 33, 85);
+  --light-red: rgb(247, 132, 132);
+  --blue-text: #2155CD;
+  --color-text: #343F50;
+  --new-color: #4A5870;
+  --border-color: #C4D3F6;
+  --border--gray-color: #C0C0C0;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f2f2;
+  max-width: 100%;
+}
+html {
+  font-size: 14px;
+}
+
+input {
+  color: black;
+}
+/* body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(102, 23, 23, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */

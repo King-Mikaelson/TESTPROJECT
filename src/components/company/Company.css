@@ -1,0 +1,26 @@
+.company__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.waiter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav__logo--company {
+  width: 150px;
+  height: 150px;
+  margin-right: 2.5rem;
+  margin-left: -0.5rem;
+}

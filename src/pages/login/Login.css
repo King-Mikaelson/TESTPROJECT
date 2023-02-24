@@ -1,0 +1,108 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 500px;
+}
+
+.logo {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 9.5rem;
+}
+
+.logo-2 {
+  width: 100px;
+  overflow-y: hidden;
+}
+.login-header {
+  font-size: 1.5rem;
+}
+
+.form-container {
+  width: 50%;
+  overflow-y: hidden;
+  padding: 1rem;
+}
+
+.form-container input {
+  outline: none;
+  border: 1px solid var(--yellow);
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+.form-container input:focus {
+  border: 2px solid var(--yellow);
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--yellow);
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.password-toggle-icon {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  /* border-radius: 0.5rem; */
+  /* background: rgb(248, 201, 201); */
+  color: rgb(224, 9, 9);
+  padding: 0.25rem;
+  position: relative;
+  bottom: -5px;
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+  .logo {
+    height: 200px;
+  }
+  .logo-header {
+    font-size: 1rem;
+  }
+}

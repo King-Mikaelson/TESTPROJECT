@@ -1,0 +1,135 @@
+.topbar__container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100% !important;
+  padding-top: 2rem;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+.topbar__container.menu {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.date {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.topbar__container form {
+  position: relative;
+  align-items: center;
+  padding: 0 1rem;
+  width: 50%;
+}
+
+.search__icon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.topbar__container input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #eee;
+  border: 3.5px solid goldenrod;
+}
+
+.topbar__container input::placeholder {
+  padding: 0.1rem;
+  font-weight: bold;
+}
+
+.cart__length {
+  background-color: red;
+  color: white;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  right: 2.6rem;
+  display: none;
+}
+
+.menu__icons {
+  display: none;
+}
+
+/* Responsivessness for Tablet Screen */
+@media (max-width: 900px) {
+  .topbar__container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+  .cart {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: fit-content;
+  }
+
+  .topbar__container.menu {
+    justify-content: space-between;
+  }
+}
+
+/* Responsivessness for Mobile Screen */
+@media (max-width: 768px) {
+  .menu__icons {
+    display: block;
+  }
+  .cart__length {
+    display: block;
+  }
+
+  .topbar__container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .cart {
+    margin-right: 1.5rem;
+  }
+  .menu__icons {
+    display: block;
+    margin-left: auto;
+  }
+  .cart__length {
+    display: block;
+  }
+  .date {
+    display: none;
+  }
+
+  .topbar__container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .topbar__container form {
+    position: relative;
+    align-items: center;
+    padding: 0 1rem;
+    width: 70%;
+  }
+}

@@ -1,0 +1,379 @@
+.backdrop__container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}
+
+.modal__center.tableDetails,
+.table__receipt {
+  height: 100vh;
+}
+
+.modal__center {
+  background-color: white;
+  margin-top: 0rem;
+  border-radius: 10px;
+}
+
+.modal__center1 {
+  background-color: white;
+  margin-top: 0rem;
+  border-radius: 10px;
+  padding: 4rem 5rem;
+}
+
+.modal__center2 {
+  background-color: white;
+  margin-top: 0rem;
+  border-radius: 10px;
+  padding: 4rem 5rem;
+}
+
+.modal__center.tableDetails {
+  height: 95vh;
+  overflow-y: scroll;
+}
+
+.table__receipt {
+  max-width: 100%;
+  padding: 0.5rem;
+  height: auto;
+}
+
+.close {
+  display: none;
+}
+
+.admin__pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.admin__pad input {
+  appearance: none;
+  padding: 1rem 2rem;
+  outline: none;
+  background-color: rgb(228, 225, 225);
+  border: none;
+  border-radius: 12px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.admin__pad form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.admin__pad button,
+.order__pad button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.admin__pad button:hover,
+.order__pad button:hover {
+  background-color: #ec9c04;
+}
+
+.orderpad__heading {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.admin__pad button a,
+.order__pad button a {
+  color: var(--yellow);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.admin__pad button:hover,
+.order__pad button:hover {
+  background-color: var(--hover);
+}
+
+.order__pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 5rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.close__order {
+  border: 1px solid black;
+  border-radius: 20px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+
+.order__buttons {
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.order__buttons button {
+  margin: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  color: var(--yellow);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.order__buttons button:hover {
+  background-color: #ec9c04;
+}
+
+.receipt__btn {
+  background-color: rgb(218, 165, 32);
+  display: block;
+  padding: 0.7rem;
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.receipt__btn:active,
+.receipt__btn:hover {
+  background-color: rgba(218, 165, 32, 0.8);
+}
+
+.row__data {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(163, 162, 162);
+}
+
+.row__data > td:nth-child(1) {
+  text-align: left !important;
+}
+
+.row__data > td {
+  text-align: center;
+}
+
+.totals__data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.totals__data > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.payment__method {
+  background-color: whitesmoke;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.payment__options {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.payment__options > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__options > div > span:first-child {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.payment__options > div > span:last-child {
+  align-self: center;
+}
+
+#payments {
+  background-color: white;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+
+#payments p {
+  font-weight: 600;
+}
+
+#payments input,
+#payments select {
+  padding: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+#payments input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+#payments button {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 5px;
+  align-self: left;
+  outline: none;
+  border: none;
+}
+
+#totalAmt span {
+  border: none;
+}
+
+#totalAmt {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+.receiptQty_btn {
+  cursor: pointer;
+  background-color: goldenrod;
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-top: 3px;
+  margin-right: 3px;
+  display: inline;
+}
+
+.modal__input {
+  outline: none;
+  padding: 3rem 9rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.close__product {
+  border: 1px solid black;
+  border-radius: 20px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .modal__center.tableDetails,
+  .table__receipt {
+    height: 100vh;
+  }
+
+  /* CHECT CODE LATER */
+  /* .modal__center {
+    padding:0rem 1rem
+  } */
+
+  .close__order {
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: -1px;
+    right: 10px;
+  }
+
+  .admin__pad button,
+  .order__pad button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease;
+    margin-top: 3rem;
+  }
+
+  .admin__pad button {
+    margin: 0 auto;
+    padding: 1.2rem;
+  }
+
+  .order__buttons button {
+    padding: 1.2rem;
+  }
+  .order__buttons button:hover {
+    background-color: #ec9c04;
+  }
+
+  .modal__center1 {
+    padding: 1rem 0.5rem;
+    width: 90%;
+  }
+
+  .modal__center2 {
+    padding: 5rem;
+    width: 90%;
+  }
+
+  .order__pad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem;
+    align-items: flex-start;
+  }
+}
